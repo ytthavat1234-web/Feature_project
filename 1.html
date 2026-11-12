@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature project</title>
+    <style>
+        body {
+            background: radial-gradient(circle at top, #1b2035 0%, #0b0f19 60%, #07090e 100%);
+            font-family: sans-serif;
+        }
+
+        .container,
+        .button-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 40px;
+            margin-bottom: -20px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+            gap: 24px;
+            
+        }
+
+        .f1 {
+            text-decoration-color: aliceblue;
+            color: aliceblue;
+            background-color: #0F172A;
+            margin-left: 8px;
+
+
+        }
+
+        .highlight-text {
+            background: linear-gradient(to right, #60a5fa, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .tag {
+            background-color: rgba(79, 70, 229, 0.2);
+            color: #a5b4fc;
+            padding: 4px 12px;
+            border-radius: 20px;
+            /* Pill shape */
+            font-size: 0.8rem;
+        }
+
+        .card {
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .card:hover {
+            border-color: rgba(129, 140, 248, 0.4);
+            transform: translateY(-2px);
+            
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+          
+            border: 1px solid rgba(255, 255, 255, 0.08);
+           
+            border-radius: 16px;
+         
+            padding: 28px;
+        }
+
+        .text {
+            text-align: center;
+            color: lightslategray;
+            margin-top: 15px;
+
+
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s ease-in-out;
+
+        }
+
+
+        .btn-secondary {
+            background-color: #4f46e5;
+            color: #e2e8f0;
+            border-color: #334155;
+        }
+
+        .btn-secondary:hover {
+            background-color: #334155;
+        }
+
+        #p {
+            color: #e2e8f0;
+            text-align: center;
+            margin-top: 100px;
+
+        }
+
+        #row {
+            color: lightslategray;
+            text-align: center;
+            margin-top: -10px;
+
+        }
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="f1">Hi,I'm</h1>
+        <span class="highlight-text">Vat</span>
+    </div>
+
+    <h5 class="text">Full stack developer crafting beautiful digital experiences</h5>
+    <div class="button-group">
+        <button class="btn btn-secondary">Gemini pro</button>
+        <button class="btn btn-secondary">My Resume</button>
+        <button class="btn btn-secondary">Contact Me</button>
+    </div>
+    <div>
+        <h2 id="p">Featured Projects</h2>
+        <h5 id="row">Check out some of my recent work</h5>
+    </div>
+    <div class="projects-grid">
+
+
+        <div class="card">
+            <div>
+                <h3 class="card-title">E-Commerce Platform</h3>
+                <p class="card-description">A full-featured online shopping platform with cart, checkout, and payment
+                    integration.</p>
+                <div class="tag-list">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Stripe</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <button class="btn-card btn-card-primary">View</button>
+                <button class="btn-card btn-card-secondary">Code</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div>
+                <h3 class="card-title">Task Management App</h3>
+                <p class="card-description">Collaborative task manager with real-time updates and team features.</p>
+                <div class="tag-list">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <button class="btn-card btn-card-primary">View</button>
+                <button class="btn-card btn-card-secondary">Code</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3 class="card-title">AI Image Generator</h3>
+                <p class="card-description">Generate stunning images using AI with customizable prompts and styles.</p>
+                <div class="tag-list">
+                    <span class="tag">React</span>
+                    <span class="tag">OpenAI</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <button class="btn-card btn-card-primary">View</button>
+                <button class="btn-card btn-card-secondary">Code</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
